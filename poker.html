@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./poker.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    body{
+        background-image: url("./imgs/bg2.jpg");
+    }
+    .box{
+        width: 900px;
+        height: 600px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    p{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: aquamarine;
+        color: #333333;
+    }
+    .poker{
+        width: 90px;
+        height: 120px;
+        background: pink;
+        position: absolute;
+        left: 350px;
+        top: 0;
+        opacity: 0;
+        background-size: cover;
+        background-position: center;
+        border: 3px solid pink;
+    }
+    .active{
+        border-color: aqua;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        border: none;
+        outline: none;
+        position: absolute;
+        left: 400px;
+        bottom: 40px;
+        background: pink;
+        color: #521ac6;
+
+    }
+    .leftBtn{
+        bottom: 0;
+    }
+
+
+</style>
+<body>
+<div class="box">
+    <p>玩法：点击两张相同数字的牌，会消去</p>
+    <button class="rightBtn">
+        &gt 右翻
+    </button>
+    <button class="leftBtn">
+        &lt 左翻
+    </button>
+</div>
+</body>
+</html>
